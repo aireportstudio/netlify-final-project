@@ -6,3 +6,5 @@ http://www.aiprojectreport.com/* https://www.aiprojectreport.com/:splat   301
 
 # Redirect non-www HTTPS to www HTTPS
 https://aiprojectreport.com/*    https://www.aiprojectreport.com/:splat   301
+
+/*  /index.html  200
