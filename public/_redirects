@@ -1,10 +1,5 @@
-# Redirect non-www HTTP to www HTTPS
-http://aiprojectreport.com/*     https://www.aiprojectreport.com/:splat   301
+# Redirect www → non-www (your primary domain)
+https://www.aiprojectreport.com/*   https://aiprojectreport.com/:splat   301
+http://www.aiprojectreport.com/*    https://aiprojectreport.com/:splat   301
 
-# Redirect www HTTP to www HTTPS
-http://www.aiprojectreport.com/* https://www.aiprojectreport.com/:splat   301
-
-# Redirect non-www HTTPS to www HTTPS
-https://aiprojectreport.com/*    https://www.aiprojectreport.com/:splat   301
-
-/*  /index.html  200
+/*   /index.html   200
