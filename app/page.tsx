@@ -689,7 +689,7 @@ export default function HomePage() {
                   </p>
                   <div className="flex items-center space-x-3">
                     <Image
-                      src="https://pub-02829b422ac049a0a11ee1c4ca66bb96.r2.dev/website/Pratiksha.webp/website/sakshi.webp"
+                      src="https://pub-02829b422ac049a0a11ee1c4ca66bb96.r2.dev/website/sakshi.webp"
                       alt="Ankita R."
                       width={48}   // 👈 matches w-12 (12 * 4px = 48px)
                       height={48}  // 👈 matches h-12 (12 * 4px = 48px)
@@ -710,7 +710,7 @@ export default function HomePage() {
                   </p>
                   <div className="flex items-center space-x-3">
                     <Image
-                      src="https://pub-02829b422ac049a0a11ee1c4ca66bb96.r2.dev/website/Pratiksha.webp/website/kaushik.webp"
+                      src="https://pub-02829b422ac049a0a11ee1c4ca66bb96.r2.dev/website/kaushik.webp"
                       alt="Kaushik G."
                       width={48}   // w-12 = 48px
                       height={48}  // h-12 = 48px
@@ -732,7 +732,7 @@ export default function HomePage() {
                   </p>
                   <div className="flex items-center space-x-3">
                     <Image
-                      src="https://pub-02829b422ac049a0a11ee1c4ca66bb96.r2.dev/website/Pratiksha.webp/website/sanikaL.webp"
+                      src="https://pub-02829b422ac049a0a11ee1c4ca66bb96.r2.dev/website/sanikaL.webp"
                       alt="Sanika L."
                       width={48}   // w-12 = 48px
                       height={48}  // h-12 = 48px
@@ -753,7 +753,7 @@ export default function HomePage() {
                   </p>
                   <div className="flex items-center space-x-3">
                     <Image
-                      src="https://pub-02829b422ac049a0a11ee1c4ca66bb96.r2.dev/website/Pratiksha.webp/website/pratik.webp"
+                      src="https://pub-02829b422ac049a0a11ee1c4ca66bb96.r2.dev/website/pratik.webp"
                       alt="Arjun Verma"
                       width={48}   // w-12 = 48px
                       height={48}  // h-12 = 48px
@@ -774,7 +774,7 @@ export default function HomePage() {
                   </p>
                   <div className="flex items-center space-x-3">
                     <Image
-                      src="https://pub-02829b422ac049a0a11ee1c4ca66bb96.r2.dev/website/Pratiksha.webp/website/Pratiksha.webp"
+                      src="https://pub-02829b422ac049a0a11ee1c4ca66bb96.r2.dev/website/Pratiksha.webp"
                       alt="Pratiksha D."
                       width={48}   // w-12 = 48px
                       height={48}  // h-12 = 48px
@@ -795,7 +795,7 @@ export default function HomePage() {
                   </p>
                   <div className="flex items-center space-x-3">
                     <Image
-                      src="https://pub-02829b422ac049a0a11ee1c4ca66bb96.r2.dev/website/Pratiksha.webp/website/snehal.webp"
+                      src="https://pub-02829b422ac049a0a11ee1c4ca66bb96.r2.dev/website/snehal.webp"
                       alt="Snehal G."
                       width={48}   // w-12 = 48px
                       height={48}  // h-12 = 48px
