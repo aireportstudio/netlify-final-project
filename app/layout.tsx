@@ -90,9 +90,7 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL("https://www.aiprojectreport.com/"),
   verification: {
-    google: "your-google-verification-code",
-    yandex: "your-yandex-verification-code",
-    yahoo: "your-yahoo-verification-code",
+    google: "O4eTXKmoqJd4oqhnBRj3lTTNYwBg8-I6Ulj-6XAWxsw"
   },
   generator: "aiprojectreport",
 }
@@ -227,45 +225,6 @@ const breadcrumbData = {
   ],
 }
 
-const faqData = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "What is AI Report Studio?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "AI Report Studio is an AI-powered platform that helps students generate professional and plagiarism-free academic project reports with templates and citation support.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Is AI Report Studio free to use?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, AI Report Studio offers a free plan that allows students to generate 1 report per month. Paid plans are available for more features and unlimited usage.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I export my report?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, you can export reports in multiple formats including PDF, DOCX, and LaTeX for easy submission.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Does AI Report Studio check for plagiarism?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, the platform has built-in plagiarism detection to ensure originality and academic integrity.",
-      },
-    },
-  ],
-}
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -279,36 +238,6 @@ export default function RootLayout({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteData) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }} />
-
-        {/* ✅ Preload fonts for faster LCP */}
-        <link
-          rel="preload"
-          as="font"
-          href="/_next/static/media/poppins-latin-700.woff2"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          as="font"
-          href="/_next/static/media/inter-latin-400.woff2"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-
-        {/* ✅ Theme + PWA */}
-        <meta name="theme-color" content="#2563eb" />
-        <meta name="msapplication-TileColor" content="#2563eb" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="AI Report Studio" />
-
-        {/* Icons */}
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body className="font-sans antialiased">
         {children}
