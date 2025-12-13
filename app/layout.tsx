@@ -2,7 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Poppins } from "next/font/google"
 import "./globals.css"
-import { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -145,7 +145,7 @@ const structuredData = {
     name: "AI Report Studio",
     logo: {
       "@type": "ImageObject",
-      url: "logo.webp",
+      url: "https://www.aiprojectreport.com/logo.webp",
     },
   },
   featureList: [
@@ -162,8 +162,14 @@ const organizationData = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "AI Report Studio",
+  alternateName: "AIProjectReport",
   url: "https://www.aiprojectreport.com/",
-  logo: "/logo.webp",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://www.aiprojectreport.com/logo.webp",
+    width: 512,
+    height: 512,
+  },
   description:
     "Leading AI-powered platform for academic report generation, helping students create professional project reports with ease.",
   foundingDate: "2019",
@@ -179,6 +185,31 @@ const organizationData = {
     "https://facebook.com/reportgenpro",
     "https://linkedin.com/company/reportgenpro",
   ],
+}
+
+const websiteData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "AI Report Studio",
+  alternateName: "AIProjectReport",
+  url: "https://www.aiprojectreport.com/",
+  description: "AI-powered platform for final year students to create structured, plagiarism-free project reports",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: "https://www.aiprojectreport.com/blog?search={search_term_string}",
+    },
+    "query-input": "required name=search_term_string",
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "AI Report Studio",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://www.aiprojectreport.com/logo.webp",
+    },
+  },
 }
 
 const breadcrumbData = {
@@ -246,6 +277,7 @@ export default function RootLayout({
         {/* ✅ JSON-LD for SEO */}
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteData) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbData) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }} />
 
